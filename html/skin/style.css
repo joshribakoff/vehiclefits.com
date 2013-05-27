@@ -1,0 +1,176 @@
+body
+{
+    margin:0;
+    background-image:url(/images/bg-top.gif);
+    background-repeat: repeat-x;
+    font-family:sans-serif;
+}
+
+img
+{
+    border:0;
+}
+#logo
+{
+    margin-top:10px;
+    float:left;
+}
+#header #contact
+{
+    position:absolute;
+    right:10px;
+    top:10px;
+    display:inline;
+    font-size:40px;
+    color:#aa0620;
+}
+#header #contact2
+{
+    position:absolute;
+    right:35px;
+    top:55px;
+    display:inline;
+    font-size:15px;
+    color:#aa0620;
+}
+#ClickAndChat
+{
+    position:absolute;
+    right:319px;
+    top:18px;
+}
+#content
+{
+    font-family: "museo-sans",helvetica,arial,sans-serif;
+    letter-spacing:0.1em;
+    font-size:13px;
+    width:980px;
+    text-align:left;
+    line-height: 31px;
+}
+#header
+{
+    position:relative;
+    height:165px;
+    width:980px;
+}
+#header #quickinfo
+{
+    margin:10px;
+}
+#navigation
+{
+    position:absolute;
+    bottom:10px;
+    margin: 0;
+    padding: 0;
+}
+#navigation li
+{
+    float:left;
+    display:inline-block;
+    padding-left:5px;
+    padding-right:22px;
+}
+#navigation li a
+{
+    font-size:17px;
+    color:#666666;
+    text-decoration:none;
+}
+#footer
+{
+    text-align:center;
+}
+h1 {
+    font-size:20px;
+}
+h2 {
+    font-size:16px;
+}
+h1,h2,h3{
+    margin:0;
+}
+p{
+    margin-top:0;
+}
+
+.video-and-features
+{
+    background-color:#eee;
+    position:relative;
+    height:380px;
+}
+.tour p {
+    font-size:10px;
+    line-height:10px;
+}
+.tour p a {
+    display:block;
+    margin-top:4px;
+}
+.tour-item{
+    display:inline-block;
+    width:200px;
+    margin-bottom:20px;
+    vertical-align: top;
+}
+
+.youtube {
+    position:absolute;
+    left:10px;
+    top:10px;
+}
+
+.intro {
+    position:absolute;
+    left:430px;
+    width:500px;
+}
+.intro ul {
+    margin:5px;
+}
+.home-tour-links {
+    background-color:#eee;
+    padding:10px;
+}
+.home-tour-links a {
+    display:inline-block;
+    width:235px;
+}
+
+#content p
+{
+    margin:0;
+    padding-bottom:8px;
+}
+h3{
+    margin:0;
+    padding-top:10px;
+    clear:both;
+}
+h3.first
+{
+    padding-top:0;
+}
+.right
+{
+    float: right; margin-left: 10px;
+}
+.left
+{
+    float: left; margin-right: 10px;
+}
+.left,.right
+{
+    padding-bottom:8px;
+}
+
+.clear {
+	clear:both;
+}
+.magentoDemo
+{
+    background:#eee;
+    padding:10px;
+}

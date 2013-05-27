@@ -1,0 +1,15 @@
+<?php
+ob_start();
+?>
+<h3>We are very busy making your ideas happen</h3>
+<pre >
+
+<?=include('changelog_data.phtml')?>
+  </pre>
+  
+  <br /> <br />
+
+<?php
+$ob = ob_get_clean();
+#$ob = preg_replace( '#([0-9]+):#', '<a target="_blank" href="http://tracker.vehiclefits.com/view.php?id=$1">$1</a>:', trim($ob) );
+echo $ob;

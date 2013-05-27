@@ -1,0 +1,33 @@
+Here are some example sites using our extension (last we checked). This list is by no means exhaustive.
+<?php
+$images = array(
+        'voorwindenparts' => 'http://www.voorwindenparts.nl',
+	'12tune' => 'http://www.12tune.nl/',
+	'aipelectronics' => 'http://www.aipelectronics.com/',
+	'apxautoparts' => 'http://www.apxautoparts.com/',
+	'autobodypartsnow' => 'http://www.autobodypartsnow.com/',
+	'boyesen' => 'http://boyesenc.nexcess.net/',
+	'caribbeantire' => 'http://caribbeantire.com/',
+	'carstereointerface' => 'http://www.carstereointerface.com//',
+	'carteq' => 'http://www.carteq-autoradio.fr/',
+	'cleggengine' => 'http://www.cleggengine.com/',
+	'cote-auto-pieces' => 'http://www.cote-auto-pieces.com/',
+	'dataexc' => 'http://dataexc.com/magento/',
+	'eliterim' => 'http://eliterim.com/',
+	'fsauto' => 'http://fsauto.de/',
+	'hotwheelsrims' => 'http://www.hotwheelsrims.com/',
+	'justsuspension' => 'http://justsuspension.com/',
+	'lockbargains' => 'http://lockbargains.com/',
+	'onlyfuelpumps' => 'http://www.onlyfuelpumps.com/',
+	'properr' => 'http://www.properr.com/',
+	'scheibenwischer' => 'http://www.scheibenwischer.com/',
+	'scooty' => 'http://www.scooty.se/',
+	'santrantransmissions' => 'http://rwmedia.info/magento/',
+	'theistore' => 'http://www.theistore.com/ipod-accessories/car-connection-kits/',
+	'viniati' => 'http://www.viniati.com/',
+	'zoops' => 'http://www.zoops.com/'
+);
+foreach( $images as $image => $link )
+{
+	echo '<li><a href="' . $link . '" target="_blank">' . $this->escape($link) . '</a></li>';
+}

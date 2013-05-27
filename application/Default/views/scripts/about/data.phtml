@@ -1,0 +1,108 @@
+<img src="/images/headers/yourdata.jpg" alt="your data is growing" />
+
+<h3 class="first">Automotive Data Import/Export</h3>
+<p>At the click of a button, all your complex automotive data is comprehensively loaded into your automotive search engine.</p>
+
+<h3>Product Application Fitments Import/Export</h3>
+<div align="center">
+    <a href="http://www.youtube.com/watch?v=wq7-A7-vUCI" target="_blank">
+        <img src="/images/play-small.gif" />
+        View a demo of Product Application Fitments Import
+    </a>
+</div>
+
+<img class="right" src="data/fitments/simple.gif" />
+<p>The application fitments import will associate or "link up" your products to the actual vehicles. You can associate products with existing <i>Makes/Models/Trims/Years</i> while adding new <i>Makes/Models/Trims/Years</i> that are encountered in your spreadsheet. This is the way to go to get everything loaded in one easy click.</p>
+ 
+<h3>Vehicles List Import/Export</h3>
+
+<div align="center">
+    <a href="http://www.youtube.com/watch?v=-XaGexy1aaY" target="_blank">
+        <img src="/images/play-small.gif" />
+        View a demo of the Vehicles List Import
+    </a>
+</div>
+
+<img class="left" src="data/no_year_range.gif" />
+<p>You can add your own lists of Makes/Models/Years. The vehicles list import is the way you load your list of vehicles into the system. This will make the vehicles available for selection in the admin panel.</p>
+     
+
+<h3>Year Ranges, Or any Numeric Range (Ranges of Model Numbers, Versions, etc..)</h3>
+<div align="center">
+    <a href="http://www.youtube.com/watch?v=8KTeEf8Fb-o" target="_blank">
+        <img src="/images/play-small.gif" />
+        View a demo Year Ranges
+    </a>
+</div>
+<img class="right" src="data/year_range.gif" />
+<p>For anything that is numeric, you can import the single column, or you can break out start &amp; end ranges. The system will detect the format automatically. This is useful if you have a whole range of years you want to add for a vehicle, you can set up that entire vehicle with on one row, hammering out 20+ years with one single row. Or list them individually. It will work for 'year' or any other numeric ranges.</p>
+
+<img class="left" src="data/year-range-one-field.jpg" />
+<p>Specifying year ranges also works with one column. If you accidentally reverse the start &amp; end, they will be swapped out appropriately.</p>
+
+<h3>Y2K Correction</h3>
+<img class="right" src="data/year-range-one-field-2digit.jpg" />
+<p>Y2K Compliance allows 2 digit years to be imported. This is not recommended for obvious reasons,  but is extremely useful for receiving badly formatted data from vendors, or importing old data. This works by guessing. If the number is less than '25 (Ex. '12), it is assumed you mean 2012. If the number is 25 or greater however (Ex. '25), it assumed you mean 1925. It assumed by year 2025 Y2K will be a thing of the past, so this number was chosen. You can choose your own threshold, or disable this functionality to use 2 digit years verbatim.</p>
+
+<h3>Enumerate SKUs, &amp; Make/Model/Year(s) By Comma</h3>
+<div align="center">
+    <a href="http://www.youtube.com/watch?v=CXESFZx3ETs" target="_blank">
+        <img src="/images/play-small.gif" />
+        View a demo of comma enumeration
+    </a>
+</div>
+
+<img class="left" src="data/comma.gif" />
+<p>Quite often, the same Engine will apply to more than one Make/Model/Year. For this reason, you may enumerate anything by comma anywhere in the import. This will cause the fitments to be 'exploded' and added to the database.</p>
+<p>Also quite often you will want to add the same vehicles to more than one SKU, you can separate your SKUs by comma the same as the years/makes/models.</p>
+
+<img class="right" src="data/comma2.gif" />
+<p>Commas can be used in more than one field. The power set (all combinations) will be multiplied out and added.</p>
+ 
+<h3>Product Fitments "All" Wildcard</h3>
+<div align="center">
+    <a href="http://www.youtube.com/watch?v=YqAAFkLoO-A" target="_blank">
+        <img src="/images/play-small.gif" />
+        View a demo of Product Application Wild Cards
+    </a>
+</div>
+
+<img class="left" src="data/fitments/wildcard1.gif" />
+<p>You may use this special 'all' notation to cause all values that are valid for a given row to be added.</p>
+
+<h3>Product Fitments "*" Wildcard</h3>
+<div align="center">
+    <a href="http://www.youtube.com/watch?v=kbR_JiaGf5g" target="_blank">
+        <img src="/images/play-small.gif" />
+        View a demo of Product Fitments "*" Wildcard
+    </a>
+</div>
+
+<img class="right" src="data/fitments/wildcard2.gif" />
+<p>Do you need to add something to all the "F" Fords (F150, F250, etc.)? Do you need to add the same set of vehicles to many SKUs? (skus 100, 100.1, 100.2, etc.)? The '*' wildcard can be used to match any text anywhere within a make, model, year, or SKU. All the matching SKUs, or vehicles that are applicable for that wildcard will be found and added in one step on the import.</p>
+
+<h3>Combine Wild Cards</h3>
+<img class="left" src="data/fitments/wildcard4.gif" />
+<p>The 'All' Wild cards, '*' Wild cards, and comma enumerations can be used in more than one field, can be combined for maximum ease of use within the same row or even within the same cell. For example, "F-150 *, F-250 *" Would match 'F-150 Super Duty' and 'F-250 Super Duty'. The '{{all}}' matches all engines, and the commas match the years enumerated. This allows 1,000s of fitments per import row, ultimately reducing your time to launch.</p>
+
+<h3>Omit Levels</h3>
+
+<p>Levels may be ommited. For example, even if your schema is year/make/model/engine, you may import just the year/make/model. The engine would then default to 'base'. This functionality can be enabled or disabled. It defaults to disabled, if disabled and a level is ommitted it is then treated as an error. This way you will be notified if you accidentally omit a level</p>
+
+
+<h3>Use your own data or use ours!</h3>
+<p>If you are just starting out or do not yet have your own vehicle database, it is no problem. The extension comes pre-loaded right out of the box with a comprehensive pack of data. It doesn't matter if you want make/model/year, or you want the "engine" or "trim" we can do it too. We have data for USA, Canada, Mexico, Netherlands, and currently expanding...</p>
+
+<h3>Data Insight</h3>
+<p>
+	<div align="center">
+        <a href="http://www.youtube.com/watch?v=KmbyxAd3Y44" target="_blank">
+            <img src="/images/play-small.gif" />
+            View a demo of Data Insight
+        </a>
+    </div>
+    
+    When creating your spreadsheet it can be difficult and aggravating to try to go back and forth, finding out which ones you already added, or why the "totals" didn't add up. That is why we created the data insight, which clearly tells you about what is happening during the import process. You will see exactly <b>how many of each level</b> (make, model &amp; year) were added.
+			
+	<i>With these capabilities we hope you will no longer resort to leaving your automotive catalog up to "guess work" ever again!</i>
+</p>

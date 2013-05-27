@@ -1,0 +1,51 @@
+<?= $this->doctype() ?>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <?= $this->headLink() ?>
+    <?= $this->headScript() ?>
+    <?= $this->headTitle() ?>
+    <style type="text/css">
+        @import url( '/skin/style.css' );
+    </style>
+</head>
+<body>
+<div align="center">
+    <div id="header">
+        <div id="logo"><a href="/" ><img src="/images/logo.png" alt="Vehicle Fits Year/Make/Model Search" /></a><br />The Year/Make/Model Company!</div>
+        <div id="contact">1-877-CAR-1788</div>
+        <div id="contact2"><img src="/images/flag.jpg" /> USA Based Development &amp; Support</div>
+        <?= $this->layout()->navigation ?>
+    </div>
+    <div id="content">
+        <?= $this->layout()->content ?>
+    </div>
+</div>
+
+
+<div id="footer">
+    <a href="/vf-documentation/index.htm" target="_blank">Documentation</a> |
+    <a href="/faq">FAQ</a> |
+    <a href="/ne8_license.rtf">Terms</a> |
+    <a href="https://github.com/vehiclefits?tab=members">Contributors</a> |
+    <a href="/examplesites">Our Clients</a> |
+    <a href="/changelog">Change Log</a> |
+    <a href="/demo">Demo</a> |
+    <a href="/contact">Contact Us</a>
+</div>
+
+
+<script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+    try {
+        var pageTracker = _gat._getTracker("UA-9034231-1");
+        pageTracker._trackPageview();
+    } catch(err) {}</script>
+
+
+</body>
+</html>

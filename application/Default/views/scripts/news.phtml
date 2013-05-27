@@ -1,0 +1,13 @@
+<strong>News</strong>
+<br />
+<?php
+Zend_Date::setOptions(array('format_type' => 'php'));
+$news = new Zend_Feed_Rss( 'http://www.aftermarket-ecommerce.com/?feed=rss2' );
+foreach( $news as $entry )
+{
+    echo $entry->pubDate();
+	?>
+	<a href="<?=$entry->link()?>"><?=htmlentities( $entry->title(), ENT_COMPAT, 'UTF-8' )?></a><br />
+	<?php
+}
+?>

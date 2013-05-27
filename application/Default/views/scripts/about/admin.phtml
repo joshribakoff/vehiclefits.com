@@ -1,0 +1,89 @@
+<img src="/images/headers/administration.jpg" />
+<h3>Administrative Features</h3>
+<ul>
+    <li>Integrates with Magento Product Edit Page for maximum convenience</li>
+    <li>Add vehicles in bulk to a product, ex add all "Hondas" in one click, or add all "Honda Civics" in only one click. Easy to add exceptions to the years or year ranges.</li>
+    <li>Ability to add many vehicle fitments without having to press "save" each time.</li>
+    <li>CSV import feature for importing your product's vehicle fitments</li>
+    <li>Integrates with sales orders - the customer's vehicle will be displayed on the sales order in the admin</li>
+    <li>Purchase pre-loaded with data or set up your own database, comes with built in tool for building your database</li>
+    <li><a href="/about/data.php">Robust Import/Exports for everything</a></li>
+</ul>
+
+<h3>Adding Vehicle Application Fitments To A Product By Hand</h3>
+<div align="center">
+    <a href="http://www.youtube.com/watch?v=PtLUidlgJaA" target="_blank">
+        <img src="/images/play-small.gif" />
+        View a demo of Adding Vehicle Application Fitments To A Product By Hand
+    </a>
+</div>
+ From the admin control panel a product ( for e.g. a wheel ) can have multiple vehicles assigned to them, users then choose their make/model/year on the front-end and the extension will find all matching parts for that vehicle. The relationships between products &amp; vehicles you are creating are called "application fitments". The <a href="http://vehiclefits.com/about/data.php">Application Fitment Import/Export</a> allows you to mass-import these fitments.
+ <div align="center"><img src="/photos/multitree.jpg" alt="Adding fits to a product with the magento plugin" /></div>
+
+<h3>Quick Add Vehicle</h3>
+ <div align="center">
+    <a href="http://www.youtube.com/watch?v=05mujAg9edw" target="_blank">
+        <img src="/images/play-small.gif" />
+        View a demo of Quick Add Vehicle
+    </a>
+</div>
+<p>Vehicles may be 'quick added' from the product edit page with an ajax interface, this allows for a fast work flow.</p>
+
+
+<h3>Manage &amp; Browse Vehicles List</h3>
+<div align="center">
+    <a href="http://www.youtube.com/watch?v=am6UPmoLSOE" target="_blank">
+        <img src="/images/play-small.gif" />
+        View a demo of Manage &amp; Browse Vehicles List
+    </a>
+</div>
+
+<p>The vehicles list can be browsed and managed from the control panel. This solves the problem of adding a vehicle by hand, or editing it. When you edit a vehicle, it will appear renamed under every product you've previously added it to. A make,model, or year can be also be easily renamed or deleted. If you delete a Make it will delete all Models,Years, and Product Applications.</p>
+
+<h3>Merge <span style="color:red;font-size: small;">(new)</span></h3>
+<div align="center">
+    <a href="http://www.youtube.com/watch?v=KrGKo8Q1_v4" target="_blank">
+        <img src="/images/play-small.gif" />
+        View a demo of Merge
+    </a>
+</div>
+
+<p>If you have multiple spellings of something, it can be a very costly mistake, because you create significant issues with the user's ability to locate products. If they search on 'F-150' with a dash but your prodoct doesn't show up because your vendor put 'F150', the customer may not pick the alternate spelling. This is why merge was created, to consolidate alternate spellings &amp; correct mistakes.</p>
+
+<a name="mass_assign"></a>
+<h3>Mass Fitment Assignment</h3>
+<p>
+     If you are inputting your fit assignments by hand you may need to assign a product to many individual fits. To speed up this process you can
+      pick a top level attribute ( eg. make "honda" ) and have it add all the options ( models/options/years ) that are hondas. You could then go thru and uncheck any fits that do not apply. In this way you can map large collections of vehicles to your products.
+</p>
+
+<p>
+    If you need to select multiple vehicles, year ranges, etc.. You can do so with the javascript interface.
+</p>
+
+<h3>Duplicate Vehicles When Duplicating A Product</h3>
+<div align="center">
+    <a href="http://www.youtube.com/watch?v=ZW6DvKLaGv0" target="_blank">
+        <img src="/images/play-small.gif" />
+        View a demo of Adding Vehicle Application Fitments To A Product By Hand
+    </a>
+</div>
+
+<p>In Magento you can duplicate a part, when you do this, all of that automotive product's vehicle applications will be copied over to the newly duplicated product.</p>
+
+<h3>Custom 'levels' and Year Ranges</h3>
+<img src="/images/admin_product_add.jpg" alt="configuring the makes/models/years that users will be able to filter products by, and will be available for assigning fits to products on the product edit page" />
+<p>
+    The system can be set up to do year ranges, for instance if you want to be able to store &quot;1991-2006&quot; as an actual fit and apply all of those years to a product at once. Customers would then select the range of years that applied. Of course it can be called something other than "year". That implies it does not have to be a number, it contain letters and dashes in the year.
+</p>
+
+<!--
+<h3>Lattice Or Hierarchy</h3>
+ <div align="center">
+    <a href="http://www.youtube.com/watch?v=-vIBwnazxCU" target="_blank">
+        <img src="/images/play-small.gif" />
+        View a demo of Lattice Or Hierarchy
+    </a>
+</div>
+<p>For example, if you use year/make/model for a schema, and go under 2000/Honda &amp; rename Honda, it should also rename all 2001 Hondas. This is possible in lattice mode. In lattice mode you can set which levels should be global. For example the 'model' is not a global level, because even if two cars have the same text for the 'model', if they are by different manufacturers they should not be treated as the same. This also allows you to interoperate with more 3rd party systems &amp; standards, such as <a href="http://www.aftermarket.org/technology/aces.aspx">ACES</a> &amp; <a href="http://vehicle-data.com">vehicle-data.com</a>.</p>
+-->

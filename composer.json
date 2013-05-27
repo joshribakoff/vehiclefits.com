@@ -1,0 +1,14 @@
+{
+    "name": "vehiclefits/vehiclefits.com",
+    "description": "Vehiclefits.com website",
+    "authors": [
+        {
+            "name": "Josh Ribakoff",
+            "email": "sales@vehiclefits.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "zendframework/zendframework1":"*"
+    }
+}

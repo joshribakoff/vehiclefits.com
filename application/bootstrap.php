@@ -116,6 +116,7 @@ class bootstrap
 
     function setupAutoloading()
     {
+        require_once('../vendor/autoload.php');
         require_once 'Zend/Loader/Autoloader.php';
         $autoloader = Zend_Loader_Autoloader::getInstance();
         $autoloader->setFallbackAutoloader(true);

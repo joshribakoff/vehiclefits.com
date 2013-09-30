@@ -23,29 +23,8 @@
     </div>
 </div>
 
-
-<div id="footer">
-    <a href="/vf-documentation/index.htm" target="_blank">Documentation</a> |
-    <a href="/faq">FAQ</a> |
-    <a href="/ne8_license.rtf">Terms</a> |
-    <a href="https://github.com/vehiclefits?tab=members">Contributors</a> |
-    <a href="/examplesites">Our Clients</a> |
-    <a href="/changelog">Change Log</a> |
-    <a href="/demo">Demo</a> |
-    <a href="/contact">Contact Us</a>
-</div>
-
-
-<script type="text/javascript">
-    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-    try {
-        var pageTracker = _gat._getTracker("UA-9034231-1");
-        pageTracker._trackPageview();
-    } catch(err) {}</script>
-
+<?php echo $this->partial('footer.phtml') ?>
+<?php echo $this->partial('google-analytics.phtml') ?>
 
 </body>
 </html>

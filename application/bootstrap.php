@@ -40,6 +40,7 @@ class bootstrap
             )
         );
         Zend_Layout::startMvc();
+        Zend_Layout::getMvcInstance()->setLayout('layout3');
         $this->setupViewHelperPaths();
         $this->getUser();
         return $this;

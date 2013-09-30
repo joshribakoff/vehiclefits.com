@@ -1,90 +1,178 @@
-<h1 align="center">Sell Auto Parts Online</h1>
-<h2 align="center">Add a Year/Make/Model Search To Your Shopping Cart.</h2>
+<?php
+Zend_Layout::getMvcInstance()->setLayout('layout2');
+echo $this->partial('carousel.phtml');
+?>
 
-<div class="video-and-features">
-    <div class="youtube">
-        <iframe title="YouTube video player" class="youtube-player" type="text/html" width="425" height="349" src="http://www.youtube.com/embed/xRGSzmp2dAk?rel=0" frameborder="0" allowFullScreen></iframe>
-        <br />
-    </div>
+<div class="section text-center">
 
-    <div class="intro">
-        <ul>
-            <li>Easy to add & Remove Year/Make/Model Drop-downs. </li>
-            <li>Vehicle Selection stored in user's session, from page to page.</li>
-            <li>50+ Configuration Options</li>
-            <li>100+ Features</li>
-            <li>Industry standard import/export</li>
-            <li>Lightning fast performance</li>
-            <li>Additional Modules for Specific Car Parts</li>
-            <li>Extensive Developer Documentation</li>
-            <li>Multiple [free, open source] shopping carts. <a href="http://metator.com" target="_blank">Metator</a>, <a href="http://www.magentocommerce.com/" target="_blank">Magento</a>, <a href="http://www.prestashop.com/" target="_blank">PrestaShop</a></li>
-        </ul>
-    </div>
-</div>
+    <div class="container">
 
-<br clear="all" />
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Filter your parts by Year/Make/Model</h2>
+                <p>Add automotive features to your shopping cart (Supports <a href="http://www.magentocommerce.com/">Magento</a> &amp; <a href="http://www.prestashop.com/">PrestaShop</a>). We install either shopping cart for you, as well as install the Vehicle Fits extension itself. Once your shopping cart has the Vehicle Fits extension installed, you will have hundreds of automotive features including a year/make/model search.</p>
+                <img src="/photos/searches.jpg" />
+                <hr>
+            </div>
+        </div><!-- /.row -->
 
-<img src="/photos/searches.jpg" />
+    </div><!-- /.container -->
 
-<br clear="all" />
+</div><!-- /.section-colored -->
 
+<div class="section-colored">
 
-<div class="home-tour-links">
-    <h2>Product Tour</h2>
-    <a href="/about/search">Search By Vehicle</a>
-    <a href="/about/search-results">Search Results</a>
-    <a href="/about/data">Data Import/Export</a>
-    <a href="/about/fitment_notes">Fitment Notes</a>
-    <a href="/about/faceted">Faceted (Layered) Navigation</a>
-    <a href="/about/admin">Administration</a>
-    <a href="/about/universal">Universal Products</a>
-    <a href="/about/checkout">Checkout</a>
-    <a href="/about/bundle">Suspension &amp; Kits</a>
-    <a href="/about/seo">Automotive SEO</a>
-    <a href="/about/snippets">Design</a>
-    <a href="/about/paint">Paint Codes</a>
-    <a href="/about/wheel">Wheels</a>
-    <a href="/about/tire">Tire</a>
-    <a href="/about/logos">Logos</a>
-</div>
+    <div class="container">
 
-<br clear="both" />
+        <div class="row">
+            <div class="col-lg-4 col-md-4">
+                <h3><i class="icon-ok-circle"></i> Sell Auto Parts Online</h3>
+                <p>Add a Year/Make/Model Search To Your Shopping Cart.</p>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <h3><i class="icon-pencil"></i> Search By Vehicle</h3>
+                <p>Vehicle Selection stored in user's session, from page to page.</p>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <h3><i class="icon-folder-open-alt"></i> Many Options</h3>
+                <p>100s of features & options. Need to add another dropdown like "engine"? Just tweak an option in your control panel.</p>
+            </div>
+        </div><!-- /.row -->
 
-<h2>About Vehicle Fits</h2>
-<p>Vehicle Fits is an extension to add automotive features to your shopping cart (Supports <a href="http://www.magentocommerce.com/">Magento</a> &amp; <a href="http://www.prestashop.com/">PrestaShop</a>). We install either shopping cart for you, as well as install the Vehicle Fits extension itself. Once your shopping cart has the Vehicle Fits extension installed, you will have hundreds of automotive features including a year/make/model search.</p>
-<p>The year/make/model search can be customized in 50+ ways, including the ability to change the number, order, or names of the select box. For example if you want to add a select box called "engine", or remove the select box called "year" you can do so. You can have as few as two select boxes, or as many as you'd like.</p>
-<p>You can import your existing data, or use Vehicle Fits to create your own data using our vehicle databases.</p>
+    </div><!-- /.container -->
 
-<br clear="both" />
-<h2>Hundreds of Features</h2>
-<ul class="features-list">
-    <li>Customizing & Adding Chained Select Boxes</li>
-    <li>Vehicle Selection Stays In Session</li>
-    <li>Hides options that do not have product</li>
-    <li>Users can make Partial Selections</li>
-    <li>List Compatible Vehicles for each product</li>
-    <li>Various Select Box Animation Styles</li>
-    <li>Various styles to display the selected vehicle</li>
-    <li>Ability to force user to select vehicle</li>
-    <li>Ability to add 'category' drop-down before year/make/model.</li>
-    <li>Choose whether to use AJAX.</li>
-    <li>Extensive options controlling which categories to show the year/make/model search on.</li>
-    <li>Customize how to display the filter (vertical, horizontal, or other).</li>
-    <li>Multi-browser support</li>
-    <li>Supports multiple shopping carts</li>
-    <li>Import Ranges of Years, Model numbers, etc.</li>
-    <li>Automatic 'Y2K' correction.</li>
-    <li>Enumerate SKUs By Comma</li>
-    <li>Enumerate Make/Model/Year(s) By Comma</li>
-    <li>Import Wildcards</li>
-    <li>Extensive reports give you essential feedback during import process</li>
-    <li><strong><a href="/producttour">100s of other features</a>, view the <a href="/producttour">product tour</a> for an extensive list</strong></li>
-</ul>
+</div><!-- /.section -->
 
-<br clear="both" />
-<br clear="both" />
+<div class="section">
 
+    <div class="container">
 
-<h2>Filter Any OEM or Aftermarket Replacement Parts!</h2>
-<p>Wheels, Tires, Truck Grilles, Truck Bed Covers, Printer Cartridges, Wine, Washer Machine Replacement Parts,
-        Sewing Machine Parts,  Any accessory, replacement or performance parts.</p>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Display Some Work on the Home Page Portfolio</h2>
+                <hr>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <a href="portfolio-item.html"><img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450"></a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <a href="portfolio-item.html"><img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450"></a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <a href="portfolio-item.html"><img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450"></a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <a href="portfolio-item.html"><img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450"></a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <a href="portfolio-item.html"><img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450"></a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <a href="portfolio-item.html"><img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450"></a>
+            </div>
+        </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+</div><!-- /.section -->
+
+<div class="section-colored">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <h2>Modern Business Features Include:</h2>
+                <ul>
+
+                    <li>Easy to add & Remove Year/Make/Model Drop-downs. </li>
+                    <li>Vehicle Selection stored in user's session, from page to page.</li>
+                    <li>50+ Configuration Options</li>
+                    <li>100+ Features</li>
+                    <li>Industry standard import/export</li>
+                    <li>Lightning fast performance</li>
+                    <li>Additional Modules for Specific Car Parts</li>
+                    <li>Extensive Developer Documentation</li>
+                    <li>Multiple [free, open source] shopping carts. <a href="http://metator.com" target="_blank">Metator</a>, <a href="http://www.magentocommerce.com/" target="_blank">Magento</a>, <a href="http://www.prestashop.com/" target="_blank">PrestaShop</a></li>
+
+                    <li>Customizing & Adding Chained Select Boxes</li>
+                    <li>Vehicle Selection Stays In Session</li>
+                    <li>Hides options that do not have product</li>
+                    <li>Users can make Partial Selections</li>
+                    <li>List Compatible Vehicles for each product</li>
+                    <li>Various Select Box Animation Styles</li>
+                    <li>Various styles to display the selected vehicle</li>
+                    <li>Ability to force user to select vehicle</li>
+                    <li>Ability to add 'category' drop-down before year/make/model.</li>
+                    <li>Choose whether to use AJAX.</li>
+                    <li>Extensive options controlling which categories to show the year/make/model search on.</li>
+                    <li>Customize how to display the filter (vertical, horizontal, or other).</li>
+                    <li>Multi-browser support</li>
+                    <li>Supports multiple shopping carts</li>
+                    <li>Import Ranges of Years, Model numbers, etc.</li>
+                    <li>Automatic 'Y2K' correction.</li>
+                    <li>Enumerate SKUs By Comma</li>
+                    <li>Enumerate Make/Model/Year(s) By Comma</li>
+                    <li>Import Wildcards</li>
+                    <li>Extensive reports give you essential feedback during import process</li>
+                    <li>100% <strong>Free</strong> to Use</li>
+                    <li>Open Source: Use for any project, private or commercial!</li>
+                </ul>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <img class="img-responsive" src="http://placehold.it/700x450/ffffff/cccccc">
+            </div>
+        </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+</div><!-- /.section-colored -->
+
+<div class="section">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <img class="img-responsive" src="http://placehold.it/700x450">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <h2>Product Tour:</h2>
+                <ul>
+                    <li><a href="/about/search">Search By Vehicle</a></li>
+                    <li><a href="/about/search-results">Search Results</a></li>
+                    <li><a href="/about/data">Data Import/Export</a></li>
+                    <li><a href="/about/fitment_notes">Fitment Notes</a></li>
+                    <li><a href="/about/faceted">Faceted (Layered) Navigation</a></li>
+                    <li><a href="/about/admin">Administration</a></li>
+                    <li><a href="/about/universal">Universal Products</a></li>
+                    <li><a href="/about/checkout">Checkout</a></li>
+                    <li><a href="/about/bundle">Suspension &amp; Kits</a></li>
+                    <li><a href="/about/seo">Automotive SEO</a></li>
+                    <li><a href="/about/snippets">Design</a></li>
+                    <li><a href="/about/paint">Paint Codes</a></li>
+                    <li><a href="/about/wheel">Wheels</a></li>
+                    <li><a href="/about/tire">Tire</a></li>
+                    <li><a href="/about/logos">Logos</a></li>
+                </ul>
+            </div>
+        </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+</div><!-- /.section -->
+
+<div class="container">
+
+    <div class="row well">
+        <div class="col-lg-8 col-md-8">
+            <h4>Filter Any OEM or Aftermarket Replacement Parts!</h4>
+            <p>Wheels, Tires, Truck Grilles, Truck Bed Covers, Printer Cartridges, Wine, Washer Machine Replacement Parts,
+                Sewing Machine Parts,  Any accessory, replacement or performance parts.</p>
+        </div>
+        <div class="col-lg-4 col-md-4">
+            <a class="btn btn-lg btn-primary pull-right" href="/producttour">See More Features!</a>
+        </div>
+    </div><!-- /.row -->
+
+</div><!-- /.container -->

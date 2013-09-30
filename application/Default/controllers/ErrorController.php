@@ -9,8 +9,6 @@ class ErrorController extends Zend_Controller_Action
 {
     function errorAction()
     {
-        $this->render('navigation','navigation',true);
-
         // Grab the error object from the request
         $errors = $this->_getParam('error_handler');
 
@@ -40,7 +38,6 @@ class ErrorController extends Zend_Controller_Action
         // pass the request to the view
         $this->view->request = $errors->request;
         $this->render('error', null, true);
-
     }
 
     function deniedAction()

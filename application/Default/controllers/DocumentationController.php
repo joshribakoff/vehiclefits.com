@@ -28,6 +28,8 @@ class DocumentationController extends Zend_Controller_Action
             foreach($body as $match) {
                 $body = $match->ownerDocument->saveXML($match);
             }
+
+            $body = preg_replace('/<img src="/', '<img src="/vf-documentation/'.dirname($url).'/', $body);
         } else {
             $body = '';
         }

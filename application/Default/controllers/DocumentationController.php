@@ -5,6 +5,7 @@ class DocumentationController extends Zend_Controller_Action
     function indexAction()
     {
         $url = str_replace('/documentation/index/','',$this->_request->getRequestUri());
+        $url = str_replace('..', '', $url);
 
         $nav = file_get_contents(BASE_PATH.'/html/vf-documentation/toc.htm');
         
@@ -16,6 +17,7 @@ class DocumentationController extends Zend_Controller_Action
         }
 
         $nav = preg_replace('/<a href="/', '<a href="/documentation/index/', $nav);
+        $nav = preg_replace('/<\/?body>/', '', $nav);
 
         $file = BASE_PATH.'/html/vf-documentation/'.$url;
         if(file_exists($file)) {
@@ -27,8 +29,9 @@ class DocumentationController extends Zend_Controller_Action
                 $body = $match->ownerDocument->saveXML($match);
             }
         } else {
-            $body = $file;
+            $body = '';
         }
+
         $this->view->body = $body;
         $this->view->nav = $nav;
     }

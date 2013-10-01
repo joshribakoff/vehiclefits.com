@@ -4,6 +4,7 @@ class DocumentationController extends Zend_Controller_Action
 
     function indexAction()
     {
+        $this->view->headTitle('Vehicle Fits Documentation');
         $url = str_replace('/documentation/index/','',$this->_request->getRequestUri());
         $url = str_replace('..', '', $url);
 

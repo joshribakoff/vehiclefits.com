@@ -8,7 +8,7 @@ class DocumentationController extends Zend_Controller_Action
         $url = str_replace('/documentation/index/','',$this->_request->getRequestUri());
         $url = str_replace('..', '', $url);
 
-        $nav = file_get_contents(BASE_PATH.'/html/vf-documentation/toc.htm');
+        $nav = file_get_contents(BASE_PATH.'/application/Default/views/scripts/vf-documentation/v3/toc.htm');
         
         $nav = new Zend_Dom_Query($nav);
         $nav = $nav->query('body');
@@ -20,7 +20,7 @@ class DocumentationController extends Zend_Controller_Action
         $nav = preg_replace('/<a href="/', '<a href="/documentation/index/', $nav);
         $nav = preg_replace('/<\/?body>/', '', $nav);
 
-        $file = BASE_PATH.'/html/vf-documentation/'.$url;
+        $file = BASE_PATH.'/application/Default/views/scripts/vf-documentation/v3//'.$url;
         if(file_exists($file)) {
             $body = file_get_contents($file);
             $body = new Zend_Dom_Query($body);

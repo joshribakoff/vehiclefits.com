@@ -9,7 +9,7 @@ class DocumentationController extends Zend_Controller_Action
         $url = str_replace('..', '', $url);
 
         $nav = file_get_contents(BASE_PATH.'/application/Default/views/scripts/vf-documentation/v3/toc.htm');
-        
+
         $nav = new Zend_Dom_Query($nav);
         $nav = $nav->query('body');
 

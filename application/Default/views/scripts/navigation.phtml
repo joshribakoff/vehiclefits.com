@@ -17,7 +17,15 @@
 
                 <li><a href="<?=$this->url(array('controller'=>'producttour'),null,true)?>">Product Tour</a></li>
                 <li><a href="<?=$this->url(array('controller'=>'demo'),null,true)?>">Demo</a></li>
-                <li><a href="<?=$this->url(array('controller'=>'download'),null,true)?>">Download</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Download <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="<?=$this->url(array('controller'=>'download', 'action'=>'magento'),null,true)?>">Magento Extension</a></li>
+                        <li><a href="<?=$this->url(array('controller'=>'download', 'action'=>'prestashop'),null,true)?>">Prestashop Extension</a></li>
+                    </ul>
+                </li>
+
                 <li><a href="/documentation/index">Documentation</a></li>
                 <li><a href="/forums/">Forums</a></li>
                 <li><a href="<?=$this->url(array('controller'=>'contact'),null,true)?>">Contact Us</a></li>

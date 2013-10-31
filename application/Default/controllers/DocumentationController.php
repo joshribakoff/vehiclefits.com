@@ -28,7 +28,7 @@ class DocumentationController extends Zend_Controller_Action
     function showdocs($version)
     {
         $this->view->headTitle('Vehicle Fits Documentation');
-        $url = preg_replace('#\/documentation\/(.*)\/#','',$this->_request->getRequestUri());
+        $url = preg_replace('#\/documentation\/(.*?)\/#','',$this->_request->getRequestUri());
         $url = str_replace('..', '', $url);
 
         $nav = file_get_contents(BASE_PATH.'/application/Default/views/scripts/vf-documentation/'.$version.'/toc.htm');
@@ -54,6 +54,7 @@ class DocumentationController extends Zend_Controller_Action
                 $file = BASE_PATH.'/application/Default/views/scripts/vf-documentation/vfmagento-3.x/'.$url;
             break;
         }
+
         $nav = preg_replace('/<\/?body>/', '', $nav);
 
         if(file_exists($file)) {
